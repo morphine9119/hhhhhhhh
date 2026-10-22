@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Essence Astrale — Votre guide cosmique</title>
+  <meta name="description" content="Explorez votre horoscope, comprenez vos influences cosmiques et découvrez de nouvelles perspectives à travers le langage des astres.">
+  <meta name="theme-color" content="#F8F7FA">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <noscript>
+    <style>
+      .sign-grid, .menu-btn, .horo-toggle { display: none !important; }
+      .horo-extended { max-height: none !important; opacity: 1 !important; }
+    </style>
+  </noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#accueil" aria-label="Essence Astrale — accueil">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20.2 12.9A8.4 8.4 0 1 1 11.4 3.9a7.2 7.2 0 0 0 8.8 9z" fill="#8054D9"/>
+          <circle cx="20" cy="4.6" r="1" fill="#8054D9"/>
+        </svg>
+        Essence Astrale
+      </a>
+
+      <nav class="site-nav" aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#horoscope">Horoscope du jour</a></li>
+          <li><a href="#theme-astral">Thème astral</a></li>
+          <li><a href="#signes">Signes du zodiaque</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-primary btn-sm header-cta" href="#horoscope">Découvrir votre signe</a>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+        <span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Navigation mobile">
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#horoscope">Horoscope du jour</a></li>
+          <li><a href="#theme-astral">Thème astral</a></li>
+          <li><a href="#signes">Signes du zodiaque</a></li>
+        </ul>
+        <a class="btn btn-primary" href="#horoscope">Découvrir votre signe</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="accueil">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="label">Votre guide cosmique</p>
+          <h1>Découvrez ce que <span class="violet">les étoiles</span> ont écrit pour vous.</h1>
+          <p>Explorez votre horoscope, comprenez vos influences cosmiques et découvrez de nouvelles perspectives à travers le langage des astres.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#horoscope">Lire votre horoscope</a>
+            <a class="btn btn-ghost" href="#theme-astral">Explorer votre thème astral</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-d2">
+          <svg class="hero-wheel" viewBox="0 0 480 480" role="img" aria-label="Roue du zodiaque en fin trait avec les douze symboles astrologiques, des orbites planétaires et un croissant de lune violet en son centre" focusable="false">
+            <g fill="none" stroke="#E9E5EF" stroke-width="1">
+              <circle cx="240" cy="240" r="228"/>
+              <circle cx="240" cy="240" r="218"/>
+              <circle cx="240" cy="240" r="170"/>
+              <circle cx="240" cy="240" r="140"/>
+              <circle cx="240" cy="240" r="112"/>
+              <circle cx="240" cy="240" r="84"/>
+              <circle cx="240" cy="240" r="56"/>
+            </g>
+            <g stroke="#E9E5EF" stroke-width="1.25">
+              <line x1="470" y1="240" x2="478" y2="240"/>
+              <line x1="10" y1="240" x2="2" y2="240"/>
+              <line x1="240" y1="470" x2="240" y2="478"/>
+              <line x1="240" y1="10" x2="240" y2="2"/>
+            </g>
+            <g class="ring-dash">
+              <circle cx="240" cy="240" r="224" fill="none" stroke="#DCD0F4" stroke-width="1.25" stroke-dasharray="1 7" stroke-linecap="round"/>
+            </g>
+            <g class="ring-dash ring-dash-reverse">
+              <circle cx="240" cy="240" r="160" fill="none" stroke="#DCD0F4" stroke-width="1" stroke-dasharray="1 6" stroke-linecap="round"/>
+            </g>
+            <g stroke="#E9E5EF" stroke-width="1">
+              <line x1="410" y1="240" x2="458" y2="240"/>
+              <line x1="70" y1="240" x2="22" y2="240"/>
+              <line x1="240" y1="410" x2="240" y2="458"/>
+              <line x1="240" y1="70" x2="240" y2="22"/>
+              <line x1="387.2" y1="325" x2="428.8" y2="349"/>
+              <line x1="92.8" y1="155" x2="51.2" y2="131"/>
+              <line x1="325" y1="387.2" x2="349" y2="428.8"/>
+              <line x1="155" y1="92.8" x2="131" y2="51.2"/>
+              <line x1="155" y1="387.2" x2="131" y2="428.8"/>
+              <line x1="325" y1="92.8" x2="349" y2="51.2"/>
+              <line x1="92.8" y1="325" x2="51.2" y2="349"/>
+              <line x1="387.2" y1="155" x2="428.8" y2="131"/>
+            </g>
+            <g class="wheel-glyphs" text-anchor="middle" font-size="17" fill="#8B8399">
+              <text x="429.3" y="290.8">&#x2648;&#xFE0E;</text>
+              <text x="378.6" y="378.6">&#x2649;&#xFE0E;</text>
+              <text x="290.8" y="429.3">&#x264A;&#xFE0E;</text>
+              <text x="189.3" y="429.3">&#x264B;&#xFE0E;</text>
+              <text x="101.4" y="378.6">&#x264C;&#xFE0E;</text>
+              <text x="50.7" y="290.8">&#x264D;&#xFE0E;</text>
+              <text x="50.7" y="189.2">&#x264E;&#xFE0E;</text>
+              <text x="101.4" y="101.4">&#x264F;&#xFE0E;</text>
+              <text x="189.3" y="50.7">&#x2650;&#xFE0E;</text>
+              <text x="290.8" y="50.7">&#x2651;&#xFE0E;</text>
+              <text x="378.6" y="101.4">&#x2652;&#xFE0E;</text>
+              <text x="429.3" y="189.2">&#x2653;&#xFE0E;</text>
+            </g>
+            <g fill="#8054D9">
+              <circle cx="325.8" cy="312" r="3.5"/>
+            </g>
+            <g fill="#777380">
+              <circle cx="161.1" cy="211.3" r="3"/>
+            </g>
+            <g fill="#DCD0F4">
+              <circle cx="325.8" cy="168" r="3"/>
+              <circle cx="198" cy="312.7" r="3"/>
+              <circle cx="318.9" cy="211.3" r="2.5"/>
+            </g>
+            <g transform="translate(240,240) rotate(-18) scale(3) translate(-12,-12)">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="#8054D9"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="horoscope">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="label">Votre éclairage du jour</p>
+          <h2>Les étoiles, aujourd’hui.</h2>
+          <p class="section-sub">Une lecture attentive pour chacun des douze signes — brève, sincère, renouvelée chaque jour.</p>
+        </div>
+
+        <div class="sign-grid reveal reveal-d1" id="sign-selector" role="group" aria-label="Choisissez votre signe astrologique"></div>
+
+        <div class="horo-panel reveal reveal-d2" id="horoscope-panel">
+          <div class="horo-head">
+            <span class="horo-glyph" id="horo-glyph" aria-hidden="true">&#x2648;&#xFE0E;</span>
+            <div>
+              <h3 id="horo-name">Bélier</h3>
+              <p class="horo-dates"><span id="horo-dates">21 mars – 19 avril</span> · <span data-today>22 octobre 2026</span></p>
+            </div>
+            <p class="horo-meta" id="horo-meta">Feu · Cardinal · Mars</p>
+          </div>
+
+          <div class="horo-body">
+            <p class="horo-today" id="horo-today">Une confiance tranquille revient en ce matin, et elle demandera à être employée. Une décision que vous tournez depuis plusieurs jours est prête pour une réponse claire et simple.</p>
+
+            <dl class="horo-cols">
+              <div class="horo-col">
+                <dt>Amour</dt>
+                <dd id="horo-love">Avancez avec chaleur plutôt qu’avec intensité — un ton plus doux ouvre la porte que l’audace ne saurait franchir.</dd>
+              </div>
+              <div class="horo-col">
+                <dt>Travail</dt>
+                <dd id="horo-career">Dites la phrase ambitieuse à voix haute dans une petite réunion ; quelqu’un l’écoute et peut agir en conséquence.</dd>
+              </div>
+              <div class="horo-col">
+                <dt>Énergie personnelle</dt>
+                <dd id="horo-energy">Votre vitalité culmine tôt. Offrez à la journée vos meilleures heures, puis laissez la soirée être douce.</dd>
+              </div>
+            </dl>
+
+            <div class="horo-extended" id="horo-extended">
+              <p id="horo-more">Observez les heures qui précèdent midi : la clarté est à son comble et le ciel favorise le mouvement décisif. En fin d’après-midi, échangez l’élan contre la conversation et laissez les autres achever la pensée que vous avez commencée.</p>
+            </div>
+
+            <button class="link-btn horo-toggle" type="button" id="horo-toggle" aria-expanded="false" aria-controls="horo-extended" data-open-label="Lire l’horoscope complet" data-close-label="Réduire">
+              <span>Lire l’horoscope complet</span>
+              <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <p class="sr-only" role="status" id="horo-status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="section" id="insights">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="label">Lumières astrologiques</p>
+          <h2>Comprenez votre empreinte cosmique.</h2>
+          <p class="section-sub">Trois pratiques apaisées pour mieux vous connaître — et mieux connaître le ciel au-dessus de vous.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature reveal" id="theme-astral">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M12 3v3M21 12h-3M12 21v-3M3 12h3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="16.2" cy="7.8" r="1.3" fill="currentColor" stroke="none"/>
+            </svg>
+            <h3>Thème astral</h3>
+            <p>Explorez les positions planétaires et leurs interprétations classiques — votre carte personnelle, instant après instant.</p>
+            <details>
+              <summary><span>En savoir plus</span><svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path d="M2 4l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+              <p class="detail">Un thème astral enregistre la position de chaque planète au moment et au lieu de votre naissance. Lisez votre Soleil, votre Lune et votre ascendant ensemble : ils décrivent à tour de rôle le tempérament, l’instinct et la première impression.</p>
+            </details>
+          </article>
+
+          <article class="feature reveal reveal-d1" id="signes">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M5.5 19.5a4.6 4.6 0 0 1 0-6.5L12 6.5l6.5 6.5a4.6 4.6 0 0 1 0 6.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 6.5V19.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <h3>Signes du zodiaque</h3>
+            <p>Découvrez les traits de personnalité et les associations élémentaires à travers le feu, la terre, l’air et l’eau.</p>
+            <details>
+              <summary><span>En savoir plus</span><svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path d="M2 4l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+              <p class="detail">Chaque signe associe un élément et un mode. L’élément décrit la manière d’engager le monde ; le mode — cardinal, fixe ou mutable — la façon de commencer, de tenir ou de relâcher.</p>
+            </details>
+          </article>
+
+          <article class="feature reveal reveal-d2" id="transits">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <ellipse cx="12" cy="12" rx="9" ry="3.8" transform="rotate(28 12 12)" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <ellipse cx="12" cy="12" rx="9" ry="3.8" transform="rotate(-28 12 12)" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/>
+            </svg>
+            <h3>Transits planétaires</h3>
+            <p>Explorez les mouvements actuels des planètes et leurs interprétations traditionnelles dans le ciel d’aujourd’hui.</p>
+            <details>
+              <summary><span>En savoir plus</span><svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path d="M2 4l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+              <p class="detail">Un transit est la position présente d’une planète par rapport à votre thème natal. Les planètes lentes — Saturne, Uranus, Neptune — dessinent les grands arcs d’une vie ; les planètes rapides colorent la semaine qui passe.</p>
+            </details>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <div class="container newsletter-inner reveal">
+        <p class="label">La lettre d’Essence Astrale</p>
+        <h2>Un peu plus près des astres.</h2>
+        <p class="section-sub">Recevez des réflexions astrologiques posées et des nouvelles du ciel, livrées avec parcimonie.</p>
+
+        <form class="nl-form" id="nl-form" novalidate>
+          <label class="sr-only" for="nl-email">Adresse e-mail</label>
+          <input type="email" id="nl-email" name="email" placeholder="vous@exemple.com" autocomplete="email" required>
+          <button class="btn btn-primary" type="submit">S’abonner</button>
+        </form>
+        <p class="nl-note" id="nl-note" role="status">Livraison occasionnelle. Désabonnement en un clic.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#accueil" aria-label="Essence Astrale — accueil">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M20.2 12.9A8.4 8.4 0 1 1 11.4 3.9a7.2 7.2 0 0 0 8.8 9z" fill="#8054D9"/>
+              <circle cx="20" cy="4.6" r="1" fill="#8054D9"/>
+            </svg>
+            Essence Astrale
+          </a>
+          <p>L’astrologie sereine pour les vies modernes.</p>
+        </div>
+        <nav aria-label="Pied de page">
+          <ul class="footer-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#horoscope">Horoscope du jour</a></li>
+            <li><a href="#theme-astral">Thème astral</a></li>
+            <li><a href="#signes">Signes du zodiaque</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-rule">
+        <p>&copy; 2026 Essence Astrale. Tous droits réservés.</p>
+        <p>Confidentialité : nous ne conservons que ce que vous choisissez de nous confier.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scroll.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
